@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list{
+    display: flex;
+    width: 50%;
+    /* height: 50%; */
+    /* background-color: black; */
+     justify-content: center;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 23px;
+    
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+
+}
+
+.rightnav{
+    /* background-color: blue; */
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url("bg.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100%;
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.firsthalf{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf{
+    width: 30%;
+}
+
+.secondhalf img{
+    width: 100%;
+    height: 70%;
+    padding: 40px 0;
+    border: 2px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    height: 80%;
+    margin: auto;
+}
+
+.big-text{
+   font-size: 41px; 
+}
+
+.small-text{
+    font-size: 15px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 8px 2px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 14px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm{
+    /* padding: 8px 20px;
+    margin: 8px 2px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 14px;
+    background: none;
+    color: white;
+    cursor: pointer; */
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+
+.secright{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 80%;
+}
+
+.imageFluid{
+    width: 60%;
+    height: 60%;
+    margin: 70px;
+}
+
+.paras{
+    padding: 10px;
+}
