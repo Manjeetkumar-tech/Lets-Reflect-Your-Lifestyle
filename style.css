@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .logo{
-    width: 20%;
+    width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,12 +29,13 @@
     position: sticky;
     top: 0;
     cursor: pointer;
+    /* height: 478px; */
 }
 
 .nav-list{
     display: flex;
-    width: 50%;
-    /* height: 50%; */
+    width: 70%;
+    height: 50%;
     /* background-color: black; */
      justify-content: center;
     align-items: center;
@@ -54,12 +60,12 @@
 
 .rightnav{
     /* background-color: blue; */
-    width: 50%;
+    width: 30%;
     text-align: right;
     padding: 0 23px;
 }
 
-#search{
+.search{
     padding: 5px;
     font-size: 17px;
     border: 2px solid blue;
@@ -72,6 +78,7 @@
     background-blend-mode: darken;
     height: 100%;
 }
+
 
 .firstsection{
     height: 100vh;
@@ -92,7 +99,7 @@
     width: 100%;
     height: 70%;
     padding: 40px 0;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     border-radius: 150px;
     display: block;
     margin: auto;
@@ -140,21 +147,176 @@
     vertical-align: middle;
 }
 
-.secright{
+.section{
     display: flex;
-    height: 500px;
+    /* height: 400px; */
     align-items: center;
     justify-content: space-evenly;
     margin: auto;
     max-width: 80%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.secleft{
+    flex-direction: row-reverse;
+    margin: 10px;
+}
+
+.secleft img{
+    margin: 155px;
 }
 
 .imageFluid{
     width: 60%;
     height: 60%;
-    margin: 70px;
+    margin-top: 19px;
+    border: 2px solid black;
+    border-radius: 23px;
 }
 
 .paras{
-    padding: 10px;
+    padding: 0 10px;
+}
+
+.sectiontag{
+    padding: 16px 0;
+}
+
+/* .sectionsubtag{
+     margin: 75px; 
+} */
+
+.thumbnail img{
+    width: 250px;
+    /* height: 250px; */
+}
+
+.secleft img{
+    height: 300px;
+}
+
+.contact{
+    background-color: burlywood;
+    height: 70vh;
+}
+
+.text-center{
+    text-align: center;
+    /* justify-content: center; */
+    padding-top: 20px;
+    font-size: 34px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form{
+    max-width: 60%;
+    margin:  15px auto;
+}
+
+.form input{
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 15px 0;
+    padding: 5px 3px;
+    display: flex;
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+#text{
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 15px 0;
+    padding: 5px 3px;
+    display: flex;
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid grey;
+}
+.text-footer{
+    text-align: center;
+    /* justify-content: center; */
+    padding: 20px 0;
+    /* font-size: 34px; */
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+}
+
+.line{
+    width: 30px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 7px;
+    /* width: 30%; */
+    /* text-align: right;
+    padding: 0 23px; */
+}
+
+@media only screen and (max-width: 623px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 473px;
+        transition: all 0.3s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    .search{
+        width: 100%;
+        /* opacity: 0; */
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .visibility-resp{
+        /* visibility: none; */
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .form{
+        max-width: 60%;
+    }
+    /* .btn-dark{
+        margin-bottom: 20px;
+        padding: 10px;
+    } */
+    .big-text{
+        text-align: center;
+    }
+    .small-text{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0%;
+        text-align: left;
+    }
 }
